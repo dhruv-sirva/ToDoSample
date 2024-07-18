@@ -7,7 +7,6 @@ using var cnn = new SqliteConnection("Filename=:memory:");
 cnn.Open();
 builder.Services.AddDbContext<TodoContext>(o=>o.UseSqlite(cnn));
 // Add services to the container.
-
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
